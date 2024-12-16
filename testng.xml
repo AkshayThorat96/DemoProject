@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="smoke"></include>	//when using(include) all smoke test cases will get run
+				<exclude name="smoke"></exclude>	//when using(exclude)except smoke,remaing code will run  
+			</run>
+		</groups>
+		<classes>
+
+			<class name="Newng.GroupingDemo" />
+
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
